@@ -1,0 +1,10 @@
+{
+  "name": "flexboard",
+  "version": "1.0.0",
+  "description": "FlexBoard Extension",
+  "scripts": {
+    "build": "cd newTabSrc && npm install && npm run build && cd .. && xcopy /s /e /y newTabSrc\\dist\\* .",
+    "dev": "cd newTabSrc && npm install && npm run dev",
+    "clean": "rmdir /s /q newTabSrc\\dist"
+  }
+}
