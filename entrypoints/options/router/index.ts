@@ -11,9 +11,14 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/newtab.html',
+      path: '/options.html',
       name: 'default',
       component: HomeView,
+    },
+    {
+      path: '/chart',
+      name: 'chart',
+      component: () => import('../views/ChartMaker.vue'),
     },
     {
       path: '/about',
