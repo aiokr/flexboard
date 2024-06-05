@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router';
 </script>
 
 <template>
   <div class="home container mx-auto">
-    
+    home
   </div>
 </template>
 
