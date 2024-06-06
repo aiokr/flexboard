@@ -4,15 +4,14 @@ import { RouterView } from 'vue-router';
 import { storage } from 'wxt/storage';
 import { supabase } from './libs/supabaseClient';
 import Menu from './components/Menu.vue';
+import Header from './components/Header.vue';
 
 </script>
 
 <template>
   <main class="w-screen h-screen overflow-auto">
     <div class="common-layout">
-      <el-header class="flex items-center justify-between">
-      <h1 class="text-lg font-bold">FlexBoard</h1>
-      </el-header>
+      <Header />
       <el-container>
         <el-aside width="200px">
           <Menu />
