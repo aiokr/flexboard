@@ -15,9 +15,8 @@ function toggleColorScheme() {
 
 <template>
   <el-menu default-active="2" class="el-menu-vertical-demo">
-    <RouterLink to="/"><el-menu-item index="1-1">Home</el-menu-item></RouterLink>
-    <RouterLink to="/chart"><el-menu-item index="1-3">图表制作工具</el-menu-item></RouterLink>
-    <RouterLink to="/about"><el-menu-item index="1-2">About</el-menu-item></RouterLink>
+    <RouterLink to="/"><el-menu-item index="1-1">Dashboard</el-menu-item></RouterLink>
+    <RouterLink to="/settings"><el-menu-item index="1-2">Settings</el-menu-item></RouterLink>
   </el-menu>
 </template>
 

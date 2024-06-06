@@ -15,6 +15,7 @@
     "postinstall": "wxt prepare"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.43.4",
     "echarts": "^5.5.0",
     "element-plus": "^2.7.4",
     "pinia": "^2.1.7",

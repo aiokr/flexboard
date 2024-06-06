@@ -11,6 +11,9 @@ export default defineConfig({
       vueTemplate: true,
     },
   },
+  manifest: {
+    permissions: ['storage'],
+  },
   vite: () => ({
     plugins: [
       vue(),
