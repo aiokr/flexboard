@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -11,15 +11,25 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/newtab.html',
+      path: '/options.html',
       name: 'default',
       component: HomeView,
+    },
+    {
+      path: '/chart',
+      name: 'chart',
+      component: () => import('../views/ChartMaker.vue'),
     },
     {
       path: '/about',
       name: 'about',
       component: AboutView,
-    }
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: () => import('../views/SettingsView.vue'),
+    },
   ]
 })
 
